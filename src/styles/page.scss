@@ -1,0 +1,105 @@
+.page {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  padding: 40px 0 0 0;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.truck-form,
+.cost-form,
+.ship-form {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  padding: 10px;
+
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.form-title {
+  margin-bottom: 10px;
+}
+
+.model-input,
+.name-input,
+.date-input,
+.averageSpeed-input,
+.team-input,
+.license-plate-input,
+.type-of-gas-input,
+.cost-by-kg-input,
+.cost-by-km-input {
+  padding: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  width: 100%;
+  resize: none;
+  border: 1px solid #00000093;
+  border-radius: 2px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.model-input:focus,
+.name-input:focus,
+.date-input:focus,
+.averageSpeed-input:focus,
+.team-input:focus,
+.license-plate-input:focus,
+.type-of-gas-input:focus,
+.cost-by-kg-input:focus,
+.cost-by-km-input:focus {
+  border: 2px solid #00000093;
+}
+
+.button {
+  position: relative;
+  margin: 20px auto 0;
+  padding: 0 16px;
+  border: none;
+  border-radius: 3px;
+  vertical-align: top;
+  outline: none;
+  font-size: 14px;
+  color: #222;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 0;
+  cursor: pointer;
+
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  width: 100px;
+  min-height: 30px;
+
+  font-weight: 500;
+  font-family: inherit;
+
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+  background-color: lightgray;
+}

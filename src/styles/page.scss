@@ -12,6 +12,7 @@
 .title {
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .truck-form,
@@ -36,6 +37,7 @@
 .date-input,
 .averageSpeed-input,
 .team-input,
+.capacity-input,
 .license-plate-input,
 .type-of-gas-input,
 .cost-by-kg-input,
@@ -56,6 +58,7 @@
 .date-input:focus,
 .averageSpeed-input:focus,
 .team-input:focus,
+.capacity-input:focus,
 .license-plate-input:focus,
 .type-of-gas-input:focus,
 .cost-by-kg-input:focus,
@@ -102,4 +105,31 @@
 
 .button:hover {
   background-color: lightgray;
+}
+
+.list-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.costs-list,
+.vehicles-list{
+  margin: 50px 10px 0;
+  width: 50%;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.item {
+display: flex;
+  justify-content: space-between;
+}
+
+.item span {
+  padding: 0 10px;
 }

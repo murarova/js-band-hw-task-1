@@ -1,8 +1,10 @@
 import Vehicle from './vehicle';
 
 class Truck extends Vehicle {
-  constructor(licensePlate, typeOfGas) {
-    super();
+  constructor(truckType, model, producedYear, capacity, averageSpeed, licensePlate, typeOfGas) {
+    super(model, producedYear, capacity);
+    this.truckType = truckType;
+    this.averageSpeed = averageSpeed;
     this.licensePlate = licensePlate;
     this.typeOfGas = typeOfGas;
   }

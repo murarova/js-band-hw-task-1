@@ -6,7 +6,8 @@ export default class Controller {
     this.view = view;
 
     this.model.getItemsFromLS();
-    this.view.init(this.model.vehicles);
+    this.view.initVehicles(this.model.vehicles);
+    this.view.initCosts(this.model.costs);
 
     this.view.on('addVehicles', this.addVehicle.bind(this));
     this.view.on('addCost', this.addCost.bind(this));
@@ -15,20 +16,12 @@ export default class Controller {
   addVehicle(vehicle) {
     this.model.addVehicle(vehicle);
     LOCALSTORAGE.set('vehicles', this.model.vehicles);
-    // this.showAllVehicles();
+    this.view.renderVehicle(vehicle);
   }
 
   addCost(cost) {
     this.model.addCost(cost);
-    LOCALSTORAGE.set('cost', this.model.costs);
-    // this.showAlllCosts();
+    LOCALSTORAGE.set('costs', this.model.costs);
+    this.view.renderCost(cost);
   }
-
-  // showAllVehicles() {
-  //   this.view.init(this.model.vehicles);
-  // }
-
-  // showAlllCosts() {
-  //   this.view.init(this.model.costs);
-  // }
 }

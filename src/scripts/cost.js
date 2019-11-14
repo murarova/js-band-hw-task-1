@@ -6,5 +6,5 @@ class Cost {
     this.costByKm = costByKm;
   }
 }
-  
+
   export default Cost;

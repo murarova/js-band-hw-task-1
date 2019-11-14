@@ -1,8 +1,9 @@
 import Vehicle from './vehicle';
 
 class Ship extends Vehicle {
-  constructor(name, averageSpeed, countOfTeam) {
-    super();
+  constructor(shipType, model, name, producedYear, capacity, averageSpeed,  countOfTeam) {
+    super(model, producedYear, capacity);
+    this.shipType = shipType;
     this.name = name;
     this.averageSpeed = averageSpeed;
     this.countOfTeam = countOfTeam;
